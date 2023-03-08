@@ -42,6 +42,6 @@ export function CheckboxList(props) {
   const { items } = props
   return items.map((item) => {
     const { name, initialValue } = item
-    <UncontrolledCheckbox name={name} initialValue={initialValue} />
+    return <UncontrolledCheckbox name={name} initialValue={initialValue} />
   })
 }

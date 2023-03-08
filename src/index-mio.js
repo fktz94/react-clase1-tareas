@@ -34,6 +34,7 @@
 import { Tarjeta, BlogPost } from './tarea/Tarea1.js'
 
 import { MatchNombre, PasswordInput, ValidationInput } from './tarea/Tarea2.js'
+import { UncontrolledCheckbox, CheckboxList } from './tarea/Tarea3.js'
 
 // Tarea 1
 
@@ -99,3 +100,20 @@ ReactDOM.render(
 )
 
 // Tarea 3
+
+
+ReactDOM.render(
+  <UncontrolledCheckbox name="Ultra Checkbox Pro 18.3.5" initialValue />,
+  document.getElementById('react-app'),
+)
+
+ReactDOM.render(
+  <CheckboxList
+    items={[
+      { name: 'uno', initialValue: false },
+      { name: 'dos', initialValue: true },
+      { name: 'tres', initialValue: false },
+    ]}
+  />,
+  document.getElementById('react-app'),
+)
